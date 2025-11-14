@@ -21,10 +21,9 @@
   "license": "MIT",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && npx vite build",
+    "build": "vite build",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
-    "render-build": "npm run build",
     "preview": "vite preview"
   },
   "dependencies": {

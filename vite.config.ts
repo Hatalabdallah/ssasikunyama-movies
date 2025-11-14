@@ -7,6 +7,18 @@ export default defineConfig({
   server: {
     host: "::",
     port: 8080,
+    allowedHosts: [
+      'ssasikunyama-frontendz.onrender.com',
+      '.onrender.com'
+    ]
+  },
+  preview: {
+    host: "::", 
+    port: 8080,
+    allowedHosts: [
+      'ssasikunyama-frontendz.onrender.com',
+      '.onrender.com'
+    ]
   },
   plugins: [react()],
   resolve: {
@@ -14,14 +26,4 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  // ADD THESE FOR PRODUCTION
-  build: {
-    outDir: 'dist',
-    sourcemap: false,
-    chunkSizeWarningLimit: 1600,
-  },
-  preview: {
-    port: 8080,
-    host: true
-  }
 });
