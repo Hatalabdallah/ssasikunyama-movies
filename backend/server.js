@@ -25,7 +25,9 @@ const __dirname = path.dirname(__filename);
 const allowedOrigins = [
   // 1. Your deployed frontend URL (STATIC SITE)
   'https://www.ssasikunyama.com', 
-  // 2. Optional: Your local frontend development URL
+  // 2. Your Render frontend URL (where requests are actually coming from)
+  'https://ssasikunyama-frontendz.onrender.com',
+  // 3. Optional: Your local frontend development URL
   'http://localhost:8080', 
 ];
 
