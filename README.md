@@ -1,7 +1,7 @@
 <h1 align="center"> Ssasikunyama Movies </h1> <br>
 <p align="center">
   <a href="https://ssasikunyama.com/">
-    <img alt="Ssasikunyama Movies" title="Ssasikunyama Movies" src="https://via.placeholder.com/450x300/1a1a1a/ffffff?text=Ssasikunyama+Movies" width="450">
+    <img alt="Ssasikunyama Movies" title="Ssasikunyama Movies" src="./public/sassi/SSASI.jpg" width="450">
   </a>
 </p>
 
@@ -50,7 +50,7 @@
 **Built with cutting-edge technology by Ddumba Abdallah Kato.**
 
 <p align="center">
-  <img src = "https://via.placeholder.com/700x400/1a1a1a/ffffff?text=Movie+Streaming+Interface" width=700>
+  <img src = "./public/sassi/content.jpg" alt="Movie Content Interface" width=700>
 </p>
 
 ## Features
@@ -68,11 +68,11 @@ A comprehensive set of features designed for modern movie streaming:
 * **Real-time Notifications**: User activity and system updates
 
 <p align="center">
-  <img src = "https://via.placeholder.com/700x400/1a1a1a/ffffff?text=Admin+Dashboard+View" width=700>
+  <img src = "./public/sassi/KUNYAMA-FRONT.jpg" alt="Platform Front View" width=700>
 </p>
 
 <p align="center">
-  <img src = "https://via.placeholder.com/700x400/1a1a1a/ffffff?text=Mobile+Responsive+View" width=700>
+  <img src = "./public/sassi/KUNYAMA-BACK.jpg" alt="Platform Back View" width=700>
 </p>
 
 ## Project Background
@@ -194,3 +194,20 @@ See the [LICENSE](LICENSE) file for detailed information.
 ---
 
 *Crafted with excellence by Ddumba Abdallah Kato - Transforming entertainment through technology.*
+
+## Image Mapping Used:
+- **Main logo**: `./public/sassi/SSASI.jpg` (your main branding image)
+- **Movie interface**: `./public/sassi/content.jpg` (shows movie content)
+- **Platform front**: `./public/sassi/KUNYAMA-FRONT.jpg` (front view of platform)
+- **Platform back**: `./public/sassi/KUNYAMA-BACK.jpg` (back view/technical side)
+
+## To Add Actual Screenshots Later:
+1. Run your application: `npm run dev`
+2. Take screenshots of:
+   - Homepage with movie slider
+   - Admin dashboard
+   - Mobile responsive view
+3. Save them in a `docs/screenshots/` folder
+4. Update the image paths to use your actual screenshots
+
+The images from your `public/sassi/` directory will now display properly in GitHub!

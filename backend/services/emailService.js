@@ -104,7 +104,7 @@ export const sendWelcomeEmail = async (email, fullName, password, whatsappLink) 
     <div class="container">
         <div class="content">
             <div class="logo" style="text-align: center; padding-bottom: 20px;">
-                <a href="https://loval-filmhub-1.onrender.com" target="_blank">
+                <a href="https://www.ssasikunyama.com" target="_blank">
                 <img src="cid:ronnieLogo" alt="Ssasikunyama Logo" style="width: 150px;">
                 </a>  
             </div>
@@ -137,7 +137,7 @@ export const sendWelcomeEmail = async (email, fullName, password, whatsappLink) 
             <p>You can now login to access thousands of movies and enjoy our platform.</p>
 
             <div style="text-align: center; margin: 20px 0;">
-              <a href="https://loval-filmhub-1.onrender.com/login" 
+              <a href="https://www.ssasikunyama.com/login" 
                  style="background: #6A0DAD; color: white; padding: 12px 30px; text-decoration: none; border-radius: 5px; display: inline-block;">
                 Login to Ssasikunyama
               </a>
@@ -163,7 +163,7 @@ export const sendWelcomeEmail = async (email, fullName, password, whatsappLink) 
                 <a href="https://wa.me/256742555553" target="_blank">
                     <img src="https://cdn-images.mailchimp.com/icons/social-block-v2/outline-light-whatsapp-48.png" alt="WhatsApp" width="24" height="24">
                 </a>
-                <a href="https://loval-filmhub-1.onrender.com" target="_blank">
+                <a href="https://www.ssasikunyama.com" target="_blank">
                     <img src="https://cdn-images.mailchimp.com/icons/social-block-v2/outline-light-link-48.png" alt="Website" width="24" height="24">
                 </a>
                 <a href="https://www.youtube.com/@ronnieentertainment7676" target="_blank">
@@ -273,7 +273,7 @@ export const sendPasswordResetEmail = async (email, otp, fullName) => {
     <div class="container">
         <div class="content">
             <div class="logo" style="text-align: center; padding-bottom: 20px;">
-                <a href="https://loval-filmhub-1.onrender.com" target="_blank">
+                <a href="https://www.ssasikunyama.com" target="_blank">
                 <img src="cid:ronnieLogo" alt="Ssasikunyama Logo" style="width: 150px;">
                 </a>  
             </div>
@@ -316,7 +316,7 @@ export const sendPasswordResetEmail = async (email, otp, fullName) => {
                 <a href="https://wa.me/256742555553" target="_blank">
                     <img src="https://cdn-images.mailchimp.com/icons/social-block-v2/outline-light-whatsapp-48.png" alt="WhatsApp" width="24" height="24">
                 </a>
-                <a href="https://loval-filmhub-1.onrender.com" target="_blank">
+                <a href="https://www.ssasikunyama.com" target="_blank">
                     <img src="https://cdn-images.mailchimp.com/icons/social-block-v2/outline-light-link-48.png" alt="Website" width="24" height="24">
                 </a>
                 <a href="https://www.youtube.com/@ronnieentertainment7676" target="_blank">
@@ -426,7 +426,7 @@ export const sendPasswordChangedEmail = async (email, fullName) => {
     <div class="container">
         <div class="content">
             <div class="logo" style="text-align: center; padding-bottom: 20px;">
-                <a href="https://loval-filmhub-1.onrender.com" target="_blank">
+                <a href="https://www.ssasikunyama.com" target="_blank">
                 <img src="cid:ronnieLogo" alt="Ssasikunyama Logo" style="width: 150px;">
                 </a>  
             </div>
@@ -465,7 +465,7 @@ export const sendPasswordChangedEmail = async (email, fullName) => {
                 <a href="https://wa.me/256742555553" target="_blank">
                     <img src="https://cdn-images.mailchimp.com/icons/social-block-v2/outline-light-whatsapp-48.png" alt="WhatsApp" width="24" height="24">
                 </a>
-                <a href="https://loval-filmhub-1.onrender.com" target="_blank">
+                <a href="https://www.ssasikunyama.com" target="_blank">
                     <img src="https://cdn-images.mailchimp.com/icons/social-block-v2/outline-light-link-48.png" alt="Website" width="24" height="24">
                 </a>
                 <a href="https://www.youtube.com/@ronnieentertainment7676" target="_blank">
@@ -584,7 +584,7 @@ export const sendPaymentConfirmationEmail = async (email, fullName, amount, conf
     <div class="container">
         <div class="content">
             <div class="logo" style="text-align: center; padding-bottom: 20px;">
-                <a href="https://loval-filmhub-1.onrender.com" target="_blank">
+                <a href="https://www.ssasikunyama.com" target="_blank">
                 <img src="cid:ronnieLogo" alt="Ssasikunyama Movies Logo" style="width: 150px;">
                 </a>  
             </div>
@@ -632,7 +632,7 @@ export const sendPaymentConfirmationEmail = async (email, fullName, amount, conf
                 <a href="https://wa.me/256742555553" target="_blank">
                     <img src="https://cdn-images.mailchimp.com/icons/social-block-v2/outline-light-whatsapp-48.png" alt="WhatsApp" width="24" height="24">
                 </a>
-                <a href="https://loval-filmhub-1.onrender.com" target="_blank">
+                <a href="https://www.ssasikunyama.com" target="_blank">
                     <img src="https://cdn-images.mailchimp.com/icons/social-block-v2/outline-light-link-48.png" alt="Website" width="24" height="24">
                 </a>
                 <a href="https://www.youtube.com/@ronnieentertainment7676" target="_blank">
@@ -746,7 +746,7 @@ export const sendAdminPaymentNotification = async (customerName, amount, confirm
     <div class="container">
         <div class="content">
             <div class="logo" style="text-align: center; padding-bottom: 20px;">
-                <a href="https://loval-filmhub-1.onrender.com" target="_blank">
+                <a href="https://www.ssasikunyama.com" target="_blank">
                 <img src="cid:ronnieLogo" alt="Ssasikunyama Movies Logo" style="width: 150px;">
                 </a>  
             </div>

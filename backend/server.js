@@ -24,7 +24,7 @@ const __dirname = path.dirname(__filename);
 // --- START CORS CONFIGURATION ---
 const allowedOrigins = [
   // 1. Your deployed frontend URL (STATIC SITE)
-  'https://loval-filmhub-1.onrender.com', 
+  'https://www.ssasikunyama.com', 
   // 2. Optional: Your local frontend development URL
   'http://localhost:8080', 
 ];

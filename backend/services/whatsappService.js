@@ -17,7 +17,7 @@ Your account has been created successfully!
 
 You can now login and start enjoying thousands of movies.
 
-Login here: https://loval-filmhub-1.onrender.com/login
+Login here: https://www.ssasikunyama.com/login
 
 Thank you for joining Ssasikunyama! 🎉`;
 
