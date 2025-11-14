@@ -8,7 +8,12 @@ import { sendWelcomeWhatsApp } from '../services/whatsappService.js';
 export const getUsers = async (req, res) => {
   try {
     const result = await pool.query(
-      `SELECT * FROM userz ORDER BY created_at DESC`
+      `SELECT 
+        u.*,
+        p.name as plan_name
+       FROM userz u
+       LEFT JOIN subscription_planz p ON u.subscription_plan_id = p.id
+       ORDER BY u.created_at DESC`
     );
 
     const users = result.rows.map(user => ({
@@ -18,6 +23,7 @@ export const getUsers = async (req, res) => {
       phone: user.phone,
       role: user.role,
       subscriptionPlanId: user.subscription_plan_id,
+      subscriptionPlanName: user.plan_name || 'None', // Simple plan name from database
       subscriptionExpiry: user.subscription_expiry,
       createdAt: user.created_at
     }));

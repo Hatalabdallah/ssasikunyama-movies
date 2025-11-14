@@ -54,6 +54,7 @@ export default function ManageUsers() {
             password: '', // Not stored from API for security
             role: user.role,
             subscriptionPlanId: user.subscriptionPlanId || undefined,
+            subscriptionPlanName: user.subscriptionPlanName || 'None', // ← ADD THIS
             subscriptionExpiry: user.subscriptionExpiry || undefined,
             createdAt: user.createdAt
           }));
@@ -168,80 +169,66 @@ export default function ManageUsers() {
     return plan ? plan.name : 'Unknown Plan';
   };
 
-  const UserCard = ({ user }: { user: User }) => {
-    const plan = user.subscriptionPlanId ? getPlanById(user.subscriptionPlanId) : null;
-    const daysRemaining = user.subscriptionExpiry 
-      ? Math.max(0, Math.ceil((new Date(user.subscriptionExpiry).getTime() - Date.now()) / (1000 * 60 * 60 * 24)))
-      : 0;
-
-    return (
-      <Card className="p-4">
-        <div className="space-y-3">
-          <div>
-            <h3 className="font-semibold text-lg">{user.fullName}</h3>
-              <div className="flex flex-col gap-1 text-sm text-muted-foreground mt-1">
-                <div className="flex items-center gap-2">
-                  <Mail className="h-3 w-3" />
-                  {user.email}
-                </div>
-                <div className="flex items-center gap-2">
-                  <Phone className="h-3 w-3" />
-                  {user.phone}
-                </div>
-                {/* ADD THIS LINE FOR PLAN NAME */}
-                <div className="flex items-center gap-2">
-                  <CreditCard className="h-3 w-3" />
-                  Plan: {user.subscriptionPlanId ? getPlanName(user.subscriptionPlanId) : 'None'}
-                </div>
-              </div>
-          </div>
-          {isSubscribed(user) && plan && (
+const UserCard = ({ user }: { user: User }) => {
+  return (
+    <Card className="p-4">
+      <div className="space-y-3">
+        <div>
+          <h3 className="font-semibold text-lg">{user.fullName}</h3>
+          <div className="flex flex-col gap-1 text-sm text-muted-foreground mt-1">
             <div className="flex items-center gap-2">
-              <Badge>{plan.name}</Badge>
-              <Badge variant="outline" className="flex items-center gap-1">
-                <Calendar className="h-3 w-3" />
-                {daysRemaining} days
-              </Badge>
+              <Mail className="h-3 w-3" />
+              {user.email}
             </div>
-          )}
-          <div className="flex gap-2">
-            <Button 
-              size="sm" 
-              variant="outline" 
-              onClick={() => handleOpenDialog(user)} 
-              className="flex-1"
-              disabled={loading}
-            >
-              <Edit className="h-4 w-4 mr-2" />
-              Edit
-            </Button>
-            <AlertDialog>
-              <AlertDialogTrigger asChild>
-                <Button size="sm" variant="destructive" className="flex-1" disabled={loading}>
-                  <Trash2 className="h-4 w-4 mr-2" />
-                  Delete
-                </Button>
-              </AlertDialogTrigger>
-              <AlertDialogContent>
-                <AlertDialogHeader>
-                  <AlertDialogTitle>Delete User</AlertDialogTitle>
-                  <AlertDialogDescription>
-                    Are you sure you want to delete "{user.fullName}"? This action cannot be undone.
-                  </AlertDialogDescription>
-                </AlertDialogHeader>
-                <AlertDialogFooter>
-                  <AlertDialogCancel>Cancel</AlertDialogCancel>
-                  <AlertDialogAction onClick={() => handleDelete(user.id)}>
-                    Delete
-                  </AlertDialogAction>
-                </AlertDialogFooter>
-              </AlertDialogContent>
-            </AlertDialog>
+            <div className="flex items-center gap-2">
+              <Phone className="h-3 w-3" />
+              {user.phone}
+            </div>
+            {/* SIMPLE PLAN NAME DISPLAY */}
+            <div className="flex items-center gap-2">
+              <CreditCard className="h-3 w-3" />
+              Plan: {user.subscriptionPlanName || 'None'}
+            </div>
           </div>
         </div>
-      </Card>
-    );
-  };
+        <div className="flex gap-2">
+          <Button 
+            size="sm" 
+            variant="outline" 
+            onClick={() => handleOpenDialog(user)} 
+            className="flex-1"
+            disabled={loading}
+          >
+            <Edit className="h-4 w-4 mr-2" />
+            Edit
+          </Button>
+          <AlertDialog>
+            <AlertDialogTrigger asChild>
+              <Button size="sm" variant="destructive" className="flex-1" disabled={loading}>
+                <Trash2 className="h-4 w-4 mr-2" />
+                Delete
+              </Button>
+            </AlertDialogTrigger>
+            <AlertDialogContent>
+              <AlertDialogHeader>
+                <AlertDialogTitle>Delete User</AlertDialogTitle>
+                <AlertDialogDescription>
+                  Are you sure you want to delete "{user.fullName}"? This action cannot be undone.
+                </AlertDialogDescription>
+              </AlertDialogHeader>
+              <AlertDialogFooter>
+                <AlertDialogCancel>Cancel</AlertDialogCancel>
+                <AlertDialogAction onClick={() => handleDelete(user.id)}>
+                  Delete
+                </AlertDialogAction>
+              </AlertDialogFooter>
+            </AlertDialogContent>
+          </AlertDialog>
+        </div>
+      </div>
+    </Card>
+  );
+};
 
   return (
     <div className="space-y-6">

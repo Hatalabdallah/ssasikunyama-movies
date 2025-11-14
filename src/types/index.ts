@@ -10,6 +10,7 @@ export interface User {
   password: string;
   role: UserRole;
   subscriptionPlanId?: string;
+  subscriptionPlanName?: string; // ← ADD THIS LINE
   subscriptionExpiry?: string;
   createdAt: string;
 }
