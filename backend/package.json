@@ -1,10 +1,29 @@
 {
-  "name": "filmhub-backend",
+  "name": "ssasikunyama-backend",
   "type": "module",
   "version": "1.0.0",
+  "description": "Backend API for Ssasikunyama Movies - Professional movie streaming platform. Developed by Ddumba Abdallah Kato at Kyakabi Group Limited.",
+  "author": "Ddumba Abdallah Kato <a.ddumba@kyakabi.com>",
+  "keywords": [
+    "movie-streaming",
+    "uganda-movies",
+    "kyakabi-group",
+    "ddumba-abdallah",
+    "nodejs",
+    "express",
+    "api",
+    "backend",
+    "fullstack"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Hatalabdallah/ssasikunyama-movies"
+  },
+  "license": "MIT",
   "scripts": {
     "dev": "node server.js",
-    "start": "node server.js"
+    "start": "node server.js",
+    "build": "echo 'No build step required for backend'"
   },
   "dependencies": {
     "@aws-sdk/client-s3": "^3.490.0",

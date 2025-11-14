@@ -14,4 +14,14 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  // ADD THESE FOR PRODUCTION
+  build: {
+    outDir: 'dist',
+    sourcemap: false,
+    chunkSizeWarningLimit: 1600,
+  },
+  preview: {
+    port: 8080,
+    host: true
+  }
 });
