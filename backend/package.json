@@ -26,6 +26,7 @@
     "build": "echo 'No build step required for backend'"
   },
   "dependencies": {
+    "mysql2": "^3.6.0",
     "@aws-sdk/client-s3": "^3.490.0",
     "@aws-sdk/s3-request-presigner": "^3.490.0",
     "axios": "^1.6.0",
